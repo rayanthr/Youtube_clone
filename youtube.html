@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+
+
+<head> 
+
+    <meta charset="utf-8">
+    <title> Youtube </title>
+    <link rel="stylesheet" href="Style.css">  
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,500;1,700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+   
+</head>
+
+<body>
+
+ <header class="icones" style="position: fixed; top: 0; left: 0;right: 0;height: 40px;background-color: #0f0f0f; z-index: 100;" >
+    
+  
+    <div class="yt">
+
+      <div>
+         <img class="menu" src="Images/icons8-menu(1).svg" title="menu">
+      </div>
+       <div>
+         <img class="ytb" src="Images/YouTube-White-Full-Color-Logo.wine.svg" title="Youtube" alt="Youtube">
+       </div>
+    </div>
+
+
+    <div class="center">
+        
+       <div style="display: flex; justify-content: center;flex:1;">
+          <input class="searchbar" type="text" id="search" placeholder="   Rechercher"> <div>
+           
+           
+
+            <div>
+                <button class="loupe"> 
+                 
+                 
+                    <div class="search">
+
+                    Search
+                    </div>  
+                    <img class=" lp " src="Images/icons8-loupe.svg" title="search" alt="Search">
+                  
+
+                </button>
+            </div> 
+        
+            
+
+         </div>
+       </div>  
+       
+      
+      
+      <div style="margin: 30px;">
+          <button class="micro">
+                <img class="mi" src="Images/microphone-342.svg" title="Vocal">
+                <div class="rchvc">
+                   Effectuer une recherche vocale 
+                    
+                </div>  
+            </button>
+        </div>
+    </div>
+
+    <div class="gch">
+
+       <button class="cr">
+        <svg class="create" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 19">
+            <path stroke="#ffff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 15h.01M4 12H2a1 1 0 0 0-1 1v4a1 1 0 0 0 1 1h16a1 1 0 0 0 1-1v-4a1 1 0 0 0-1-1h-3m-5.5 0V1.07M5.5 5l4-4 4 4"/>
+          </svg>
+
+          <div class="vid">
+
+            Creer une video
+            </div>  
+       </button>
+
+       <button class="apps">
+        <svg class="app" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 16">
+            <path stroke="#ffff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5h6M9 8h6m-6 3h6M4.996 5h.01m-.01 3h.01m-.01 3h.01M2 1h16a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1Z"/>
+          </svg>
+
+          <div class="appli">
+                Applications
+            </div>  
+       </button>
+       
+       <button class="not">
+            <div>
+                <svg class="ff" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 16 21">
+                <path stroke="#ffff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M8 3.464V1.1m0 2.365a5.338 5.338 0 0 1 5.133 5.368v1.8c0 2.386 1.867 2.982 1.867 4.175C15 15.4 15 16 14.462 16H1.538C1 16 1 15.4 1 14.807c0-1.193 1.867-1.789 1.867-4.175v-1.8A5.338 5.338 0 0 1 8 3.464ZM4.54 16a3.48 3.48 0 0 0 6.92 0H4.54Z"/>
+            </svg>
+            </div>
+           
+            <div class="compteur">
+
+                3
+
+
+            </div>
+            <div class="notifications">
+              
+                notifications
+                
+            </div>  
+
+
+       </button>
+       
+       <button class="ut">
+          <svg class="profil" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="#ffff" viewBox="0 0 14 18">
+             <path d="M7 9a4.5 4.5 0 1 0 0-9 4.5 4.5 0 0 0 0 9Zm2 1H5a5.006 5.006 0 0 0-5 5v2a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2a5.006 5.006 0 0 0-5-5Z"/>
+          </svg>
+
+            <div class="utilisateur">
+ 
+                Utilisateur
+           </div>  
+        </button>
+
+    </div>
+
+
+
+</header>
+
+<div style="position: fixed; left: 0;top: 100px;width: 100px;bottom: 0;background-color:#0f0f0f; z-index: 200;">
+
+    <div class="sidebar">
+    
+        <svg  class="maison" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="#ffff" viewBox="0 0 20 20" style="width: 45px;">
+            <path d="m19.707 9.293-2-2-7-7a1 1 0 0 0-1.414 0l-7 7-2 2a1 1 0 0 0 1.414 1.414L2 10.414V18a2 2 0 0 0 2 2h3a1 1 0 0 0 1-1v-4a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v4a1 1 0 0 0 1 1h3a2 2 0 0 0 2-2v-7.586l.293.293a1 1 0 0 0 1.414-1.414Z"/>
+          </svg>
+        <div class="des">Accueil</div>
+
+    </div>
+    <div class="sidebar">
+       <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M15.94 7.61999L11.06 9.61999C10.7251 9.75225 10.421 9.95185 10.1664 10.2064C9.91185 10.461 9.71225 10.7651 9.57999 11.1L7.57999 15.98C7.54715 16.0636 7.54869 16.1567 7.58429 16.2392C7.61988 16.3216 7.68664 16.3866 7.76999 16.42C7.85065 16.4499 7.93934 16.4499 8.02 16.42L12.9 14.42C13.2348 14.2877 13.539 14.0881 13.7936 13.8336C14.0481 13.579 14.2477 13.2748 14.38 12.94L16.38 8.05999C16.4128 7.97643 16.4113 7.88326 16.3757 7.80082C16.3401 7.71839 16.2733 7.65338 16.19 7.61999C16.1093 7.59013 16.0207 7.59013 15.94 7.61999ZM12 13C11.8022 13 11.6089 12.9413 11.4444 12.8315C11.28 12.7216 11.1518 12.5654 11.0761 12.3827C11.0004 12.2 10.9806 11.9989 11.0192 11.8049C11.0578 11.6109 11.153 11.4327 11.2929 11.2929C11.4327 11.153 11.6109 11.0578 11.8049 11.0192C11.9989 10.9806 12.2 11.0004 12.3827 11.0761C12.5654 11.1518 12.7216 11.28 12.8315 11.4444C12.9413 11.6089 13 11.8022 13 12C13 12.2652 12.8946 12.5196 12.7071 12.7071C12.5196 12.8946 12.2652 13 12 13Z" fill="#ffffff"></path> <path d="M12 21C10.22 21 8.47991 20.4722 6.99987 19.4832C5.51983 18.4943 4.36628 17.0887 3.68509 15.4442C3.0039 13.7996 2.82567 11.99 3.17294 10.2442C3.5202 8.49836 4.37737 6.89472 5.63604 5.63604C6.89472 4.37737 8.49836 3.5202 10.2442 3.17294C11.99 2.82567 13.7996 3.0039 15.4442 3.68509C17.0887 4.36628 18.4943 5.51983 19.4832 6.99987C20.4722 8.47991 21 10.22 21 12C21 14.387 20.0518 16.6761 18.364 18.364C16.6761 20.0518 14.387 21 12 21ZM12 4.5C10.5166 4.5 9.0666 4.93987 7.83323 5.76398C6.59986 6.58809 5.63856 7.75943 5.07091 9.12988C4.50325 10.5003 4.35473 12.0083 4.64411 13.4632C4.9335 14.918 5.64781 16.2544 6.6967 17.3033C7.7456 18.3522 9.08197 19.0665 10.5368 19.3559C11.9917 19.6453 13.4997 19.4968 14.8701 18.9291C16.2406 18.3614 17.4119 17.4001 18.236 16.1668C19.0601 14.9334 19.5 13.4834 19.5 12C19.5 10.0109 18.7098 8.10323 17.3033 6.6967C15.8968 5.29018 13.9891 4.5 12 4.5Z" fill="#ffffff"></path> </g></svg>
+        <div class="des">Tendances</div>
+
+    </div>
+    <div class="sidebar">
+        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M8 3H16M6 7H18M11 14.5V17.5L14 16L11 14.5ZM6 21H18C19.1046 21 20 20.1046 20 19V13C20 11.8954 19.1046 11 18 11H6C4.89543 11 4 11.8954 4 13V19C4 20.1046 4.89543 21 6 21Z" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
+        
+        <div class="des">Abonnements</div>
+
+    </div>
+    <div class="sidebar">
+        <img src="Images/icons8-musique-youtube.svg"style="height: 50px;">
+        <div class="des">Youtube-music</div>
+
+    </div>
+    <div class="sidebar">
+        <img src="Images/icons8-short-youtube.svg"style="height: 50px;">
+        <div class="des">Youtube-shorts</div>
+    </div>
+  
+  
+
+
+</div>
+
+<div class="globgr">
+
+    <div class="main">
+            <div class="position">
+                <a href="https://youtu.be/brlY_DMoaRk?si=gzfWFV4DqP4qPdb-" target="_blank" >
+                    <img class="Img1" src="Images/hq720.webp" alt="Comedie club" title="Frayssinet">
+               </a>
+                <div class="timer">
+                      
+                    7:22
+
+                </div>
+            
+            
+            
+            </div>
+
+        <div class="m1">
+    
+            <div class="m">
+
+                <img  class="c" src="Images/channels4_profile1.jpg">
+
+            </div>
+     
+            <div class="m2">
+
+            
+              <div class="rom"> <strong> Frayssinet - "L'intelligence" des animaux </strong></div>
+             
+              <div class="rom2"> 5,9 M de vues   &#183 il y a 5 ans </div><br>
+              <div class="rom3"> Montreux Comedy <svg class="badge" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="#ffff" viewBox="0 0 21 21">
+                <path stroke="CurrentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m6.072 10.072 2 2 6-4m3.586 4.314.9-.9a2 2 0 0 0 0-2.828l-.9-.9a2 2 0 0 1-.586-1.414V5.072a2 2 0 0 0-2-2H13.8a2 2 0 0 1-1.414-.586l-.9-.9a2 2 0 0 0-2.828 0l-.9.9a2 2 0 0 1-1.414.586H5.072a2 2 0 0 0-2 2v1.272a2 2 0 0 1-.586 1.414l-.9.9a2 2 0 0 0 0 2.828l.9.9a2 2 0 0 1 .586 1.414v1.272a2 2 0 0 0 2 2h1.272a2 2 0 0 1 1.414.586l.9.9a2 2 0 0 0 2.828 0l.9-.9a2 2 0 0 1 1.414-.586h1.272a2 2 0 0 0 2-2V13.8a2 2 0 0 1 .586-1.414Z"/>
+              </svg></div>  
+             
+           
+    
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="main">
+ 
+         <div class="position">
+            <a href="https://youtu.be/tls1jJ4923k?si=aVRz2vMXt27h9B5A" target="_blank">
+            <img class="Img2"  src="Images/hq721.webp" alt="Mister V" title="Mister V">
+            </a>
+            
+            <div class="timer">
+                      
+                19:18
+
+            </div>
+        
+        </div>
+    
+            <div class="m1">
+
+                 <div class="m">
+
+                  <img class="c" src="Images/channels4_profile.jpg">
+
+                </div>
+      
+                <div class="m2">
+
+                 <div class="rom"> <strong>MISTER V - LA POLICE 3 </strong></div>
+
+                 <div class="rom2">11 M de vues  &#183 il y a 1 an</div>
+                 <br><div class="rom3">Mister V <svg class="badge" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="#ffff" viewBox="0 0 21 21">
+                    <path stroke="CurrentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m6.072 10.072 2 2 6-4m3.586 4.314.9-.9a2 2 0 0 0 0-2.828l-.9-.9a2 2 0 0 1-.586-1.414V5.072a2 2 0 0 0-2-2H13.8a2 2 0 0 1-1.414-.586l-.9-.9a2 2 0 0 0-2.828 0l-.9.9a2 2 0 0 1-1.414.586H5.072a2 2 0 0 0-2 2v1.272a2 2 0 0 1-.586 1.414l-.9.9a2 2 0 0 0 0 2.828l.9.9a2 2 0 0 1 .586 1.414v1.272a2 2 0 0 0 2 2h1.272a2 2 0 0 1 1.414.586l.9.9a2 2 0 0 0 2.828 0l.9-.9a2 2 0 0 1 1.414-.586h1.272a2 2 0 0 0 2-2V13.8a2 2 0 0 1 .586-1.414Z"/>
+                  </svg></div>
+   
+                </div> 
+   
+   
+            </div>
+   
+    </div>
+
+
+
+
+    <div class="main">
+ 
+        <div class="position">
+
+            <a href="https://youtu.be/TLKxdTmk-zc?si=nFgwxhyjXIdd3GAT" target="_blank">
+             <img class="Img3"  src="Images/hq722.webp" alt="David Goggins" title="Motivation">
+            </a> 
+           <div class="timer">
+                      
+                10:15
+
+            </div>
+       </div>
+   
+           <div class="m1">
+
+                <div class="m">
+
+                 <img class="c" src="Images/unnamed.jpg">
+
+               </div>
+     
+               <div class="m2">
+
+                <div class="rom"> <strong>The Most Eye Opening 10 Minutes Of Your Life | David Goggins</strong></div>
+
+                <div class="rom2">16 M de vues &#183 il y a 4 ans</div>
+                <br><div class="rom3">Motivation madness <svg class="badge" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="#ffff" viewBox="0 0 21 21">
+                    <path stroke="CurrentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m6.072 10.072 2 2 6-4m3.586 4.314.9-.9a2 2 0 0 0 0-2.828l-.9-.9a2 2 0 0 1-.586-1.414V5.072a2 2 0 0 0-2-2H13.8a2 2 0 0 1-1.414-.586l-.9-.9a2 2 0 0 0-2.828 0l-.9.9a2 2 0 0 1-1.414.586H5.072a2 2 0 0 0-2 2v1.272a2 2 0 0 1-.586 1.414l-.9.9a2 2 0 0 0 0 2.828l.9.9a2 2 0 0 1 .586 1.414v1.272a2 2 0 0 0 2 2h1.272a2 2 0 0 1 1.414.586l.9.9a2 2 0 0 0 2.828 0l.9-.9a2 2 0 0 1 1.414-.586h1.272a2 2 0 0 0 2-2V13.8a2 2 0 0 1 .586-1.414Z"/>
+                  </svg></div>
+  
+               </div> 
+  
+  
+           </div>
+  
+   </div>
+   
+    <img class="Img4"  src="Images/hq723.webp" alt="Henry" title="Le rire jaune">
+    <img class="Img5"  src="Images/hq724.webp" alt="Speed" title="Sidemen">
+    <img class="Img6"  src="Images/hq725.webp" alt="SnowFall" title="Netflix">
+    <img class="Img7"  src="Images/hq726.webp" alt="Khabib" title="UFC">
+    <img class="Img8"  src="Images/Screenshot 2023-10-24 at 22-27-01 YouTube.png" alt="Lofi" title="Chilled cow">
+
+
+</div>
+
+
+</body>
+
+
+
+
+
+
+
+
+
+
+</html>
